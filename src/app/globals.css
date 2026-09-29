@@ -1,0 +1,798 @@
+@import "tailwindcss";
+
+
+
+
+
+/* ==========================================================================
+   STYLE GUIDE / DESIGN SYSTEM (Generated from Figma Specifications)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. COLOR TOKENS (CSS Variables in :root)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Neutral (Black/Grayscale) */
+  --color-neutral-50: #f5f5f6;
+  --color-neutral-100: #e5e6e8;
+  --color-neutral-200: #ced0d3;
+  --color-neutral-300: #abaeb5;
+  --color-neutral-400: #82868e;
+  --color-neutral-500: #666973;
+  --color-neutral-600: #585a62;
+  --color-neutral-700: #4b4c53;
+  --color-neutral-800: #424348;
+  --color-neutral-900: #3a3b3f;
+  --color-neutral-950: #242528;
+
+  /* Primary (Electric Violet / Blue) */
+  --color-primary-50: #e7f6ff;
+  --color-primary-100: #d3eeff;
+  --color-primary-200: #b0ddff;
+  --color-primary-300: #81c5ff;
+  --color-primary-400: #4f9dff;
+  --color-primary-500: #2872ff;
+  --color-primary-600: #0445ff;
+  --color-primary-700: #0043ff;
+  --color-primary-800: #003be2;
+  --color-primary-900: #0b36a4;
+  --color-primary-950: #071e5f;
+
+  /* Secondary (Lime / Chartreuse) */
+  --color-secondary-50: #fdffe4;
+  --color-secondary-100: #faffc5;
+  --color-secondary-200: #f2ff92;
+  --color-secondary-300: #e4ff54;
+  --color-secondary-400: #d4fb20;
+  --color-secondary-500: #cbfc01;
+  --color-secondary-600: #8cb400;
+  --color-secondary-700: #6a8902;
+  --color-secondary-800: #546b09;
+  --color-secondary-900: #465a0d;
+  --color-secondary-950: #243300;
+}
+
+
+
+
+@theme inline {
+  /* Font bindings for Tailwind */
+  --font-sans: var(--font-satoshi), 'Satoshi', sans-serif;
+  --font-heading: var(--font-poppins), 'Poppins', sans-serif;
+  --font-satoshi: var(--font-satoshi), 'Satoshi', sans-serif;
+  --font-poppins: var(--font-poppins), 'Poppins', sans-serif;
+}
+
+/* ========== Global Reset & Base ========== */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-neutral-950);
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== Custom Scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-400);
+}
+
+/* ========== Selection ========== */
+::selection {
+  background: rgba(4, 69, 255, 0.2);
+  color: inherit;
+}
+
+/* ========== Focus Visible ========== */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-600);
+  outline-offset: 2px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. TYPOGRAPHY SYSTEM
+   - Headings: Poppins SemiBold (600), Line-Height: 120% (1.2)
+   - Body: Satoshi Regular (400), Line-Height: 160% (1.6)
+   - Labels: Satoshi Medium (500), Line-Height: 120% (1.2)
+   -------------------------------------------------------------------------- */
+
+/* Headings (Poppins SemiBold 600, Line Height 120%) */
+.heading-l {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.heading-m {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.heading-s {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.heading-xs {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* Responsive adjustment for extra large headings on mobile devices */
+@media (max-width: 768px) {
+  .heading-l {
+    font-size: 40px;
+  }
+
+  .heading-m {
+    font-size: 32px;
+  }
+
+  .heading-s {
+    font-size: 28px;
+  }
+}
+
+/* Body (Satoshi Regular 400, Line Height 160%) */
+.body-l {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.body-m {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.body-s {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.body-xs {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Label (Satoshi Medium 500, Line Height 120%) */
+.label-l {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.label-m {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.label-s {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.label-xs {
+  font-family: var(--font-satoshi), 'Satoshi', sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Font Weights (Style Guide Specific) */
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   3. COLOR UTILITY CLASSES (Directly using :root variables)
+   -------------------------------------------------------------------------- */
+
+/* Neutral Backgrounds */
+.bg-neutral-50 {
+  background-color: var(--color-neutral-50);
+}
+
+.bg-neutral-100 {
+  background-color: var(--color-neutral-100);
+}
+
+.bg-neutral-200 {
+  background-color: var(--color-neutral-200);
+}
+
+.bg-neutral-300 {
+  background-color: var(--color-neutral-300);
+}
+
+.bg-neutral-400 {
+  background-color: var(--color-neutral-400);
+}
+
+.bg-neutral-500 {
+  background-color: var(--color-neutral-500);
+}
+
+.bg-neutral-600 {
+  background-color: var(--color-neutral-600);
+}
+
+.bg-neutral-700 {
+  background-color: var(--color-neutral-700);
+}
+
+.bg-neutral-800 {
+  background-color: var(--color-neutral-800);
+}
+
+.bg-neutral-900 {
+  background-color: var(--color-neutral-900);
+}
+
+.bg-neutral-950 {
+  background-color: var(--color-neutral-950);
+}
+
+/* Neutral Text */
+.text-neutral-50 {
+  color: var(--color-neutral-50);
+}
+
+.text-neutral-100 {
+  color: var(--color-neutral-100);
+}
+
+.text-neutral-200 {
+  color: var(--color-neutral-200);
+}
+
+.text-neutral-300 {
+  color: var(--color-neutral-300);
+}
+
+.text-neutral-400 {
+  color: var(--color-neutral-400);
+}
+
+.text-neutral-500 {
+  color: var(--color-neutral-500);
+}
+
+.text-neutral-600 {
+  color: var(--color-neutral-600);
+}
+
+.text-neutral-700 {
+  color: var(--color-neutral-700);
+}
+
+.text-neutral-800 {
+  color: var(--color-neutral-800);
+}
+
+.text-neutral-900 {
+  color: var(--color-neutral-900);
+}
+
+.text-neutral-950 {
+  color: var(--color-neutral-950);
+}
+
+/* Neutral Borders */
+.border-neutral-50 {
+  border-color: var(--color-neutral-50);
+}
+
+.border-neutral-100 {
+  border-color: var(--color-neutral-100);
+}
+
+.border-neutral-200 {
+  border-color: var(--color-neutral-200);
+}
+
+.border-neutral-300 {
+  border-color: var(--color-neutral-300);
+}
+
+.border-neutral-400 {
+  border-color: var(--color-neutral-400);
+}
+
+.border-neutral-500 {
+  border-color: var(--color-neutral-500);
+}
+
+.border-neutral-600 {
+  border-color: var(--color-neutral-600);
+}
+
+.border-neutral-700 {
+  border-color: var(--color-neutral-700);
+}
+
+.border-neutral-800 {
+  border-color: var(--color-neutral-800);
+}
+
+.border-neutral-900 {
+  border-color: var(--color-neutral-900);
+}
+
+.border-neutral-950 {
+  border-color: var(--color-neutral-950);
+}
+
+/* Primary Backgrounds */
+.bg-primary-50 {
+  background-color: var(--color-primary-50);
+}
+
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--color-primary-200);
+}
+
+.bg-primary-300 {
+  background-color: var(--color-primary-300);
+}
+
+.bg-primary-400 {
+  background-color: var(--color-primary-400);
+}
+
+.bg-primary-500 {
+  background-color: var(--color-primary-500);
+}
+
+.bg-primary-600 {
+  background-color: var(--color-primary-600);
+}
+
+.bg-primary-700 {
+  background-color: var(--color-primary-700);
+}
+
+.bg-primary-800 {
+  background-color: var(--color-primary-800);
+}
+
+.bg-primary-900 {
+  background-color: var(--color-primary-900);
+}
+
+.bg-primary-950 {
+  background-color: var(--color-primary-950);
+}
+
+/* Primary Text */
+.text-primary-50 {
+  color: var(--color-primary-50);
+}
+
+.text-primary-100 {
+  color: var(--color-primary-100);
+}
+
+.text-primary-200 {
+  color: var(--color-primary-200);
+}
+
+.text-primary-300 {
+  color: var(--color-primary-300);
+}
+
+.text-primary-400 {
+  color: var(--color-primary-400);
+}
+
+.text-primary-500 {
+  color: var(--color-primary-500);
+}
+
+.text-primary-600 {
+  color: var(--color-primary-600);
+}
+
+.text-primary-700 {
+  color: var(--color-primary-700);
+}
+
+.text-primary-800 {
+  color: var(--color-primary-800);
+}
+
+.text-primary-900 {
+  color: var(--color-primary-900);
+}
+
+.text-primary-950 {
+  color: var(--color-primary-950);
+}
+
+/* Primary Borders */
+.border-primary-50 {
+  border-color: var(--color-primary-50);
+}
+
+.border-primary-100 {
+  border-color: var(--color-primary-100);
+}
+
+.border-primary-200 {
+  border-color: var(--color-primary-200);
+}
+
+.border-primary-300 {
+  border-color: var(--color-primary-300);
+}
+
+.border-primary-400 {
+  border-color: var(--color-primary-400);
+}
+
+.border-primary-500 {
+  border-color: var(--color-primary-500);
+}
+
+.border-primary-600 {
+  border-color: var(--color-primary-600);
+}
+
+.border-primary-700 {
+  border-color: var(--color-primary-700);
+}
+
+.border-primary-800 {
+  border-color: var(--color-primary-800);
+}
+
+.border-primary-900 {
+  border-color: var(--color-primary-900);
+}
+
+.border-primary-950 {
+  border-color: var(--color-primary-950);
+}
+
+/* Secondary Backgrounds */
+.bg-secondary-50 {
+  background-color: var(--color-secondary-50);
+}
+
+.bg-secondary-100 {
+  background-color: var(--color-secondary-100);
+}
+
+.bg-secondary-200 {
+  background-color: var(--color-secondary-200);
+}
+
+.bg-secondary-300 {
+  background-color: var(--color-secondary-300);
+}
+
+.bg-secondary-400 {
+  background-color: var(--color-secondary-400);
+}
+
+.bg-secondary-500 {
+  background-color: var(--color-secondary-500);
+}
+
+.bg-secondary-600 {
+  background-color: var(--color-secondary-600);
+}
+
+.bg-secondary-700 {
+  background-color: var(--color-secondary-700);
+}
+
+.bg-secondary-800 {
+  background-color: var(--color-secondary-800);
+}
+
+.bg-secondary-900 {
+  background-color: var(--color-secondary-900);
+}
+
+.bg-secondary-950 {
+  background-color: var(--color-secondary-950);
+}
+
+/* Secondary Text */
+.text-secondary-50 {
+  color: var(--color-secondary-50);
+}
+
+.text-secondary-100 {
+  color: var(--color-secondary-100);
+}
+
+.text-secondary-200 {
+  color: var(--color-secondary-200);
+}
+
+.text-secondary-300 {
+  color: var(--color-secondary-300);
+}
+
+.text-secondary-400 {
+  color: var(--color-secondary-400);
+}
+
+.text-secondary-500 {
+  color: var(--color-secondary-500);
+}
+
+.text-secondary-600 {
+  color: var(--color-secondary-600);
+}
+
+.text-secondary-700 {
+  color: var(--color-secondary-700);
+}
+
+.text-secondary-800 {
+  color: var(--color-secondary-800);
+}
+
+.text-secondary-900 {
+  color: var(--color-secondary-900);
+}
+
+.text-secondary-950 {
+  color: var(--color-secondary-950);
+}
+
+/* Secondary Borders */
+.border-secondary-50 {
+  border-color: var(--color-secondary-50);
+}
+
+.border-secondary-100 {
+  border-color: var(--color-secondary-100);
+}
+
+.border-secondary-200 {
+  border-color: var(--color-secondary-200);
+}
+
+.border-secondary-300 {
+  border-color: var(--color-secondary-300);
+}
+
+.border-secondary-400 {
+  border-color: var(--color-secondary-400);
+}
+
+.border-secondary-500 {
+  border-color: var(--color-secondary-500);
+}
+
+.border-secondary-600 {
+  border-color: var(--color-secondary-600);
+}
+
+.border-secondary-700 {
+  border-color: var(--color-secondary-700);
+}
+
+.border-secondary-800 {
+  border-color: var(--color-secondary-800);
+}
+
+.border-secondary-900 {
+  border-color: var(--color-secondary-900);
+}
+
+.border-secondary-950 {
+  border-color: var(--color-secondary-950);
+}
+
+
+
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(209, 245, 38, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(209, 245, 38, 0.2);
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  50% {
+    transform: translate(15px, -20px) scale(1.05);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+/* Stagger delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
