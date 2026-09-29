@@ -236,9 +236,9 @@ function CourseCard({ course }) {
           </div>
 
           {/* Author */}
-          <p className="text-[13px] text-gray-500 mt-1 mb-4">
+          <p className="body-xs text-gray-500 mt-1 mb-4">
             by{" "}
-            <span className="text-[#2563EB] hover:underline cursor-pointer font-normal">
+            <span className="text-[#2563EB] hover:underline cursor-pointer">
               {course.author}
             </span>
           </p>

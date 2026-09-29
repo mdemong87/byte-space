@@ -2,10 +2,29 @@
 
 import Image from "next/image";
 
+
+
+function LevelBars() {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 12 12"
+      fill="currentColor"
+      className="shrink-0 text-gray-700"
+      aria-hidden="true"
+    >
+      <rect x="1" y="7" width="2.2" height="5" rx="0.5" />
+      <rect x="5" y="4" width="2.2" height="8" rx="0.5" />
+      <rect x="9" y="1" width="2.2" height="11" rx="0.5" />
+    </svg>
+  );
+}
+
 function LimeSpring() {
   const coilSrc = "/images/hero-section/mask-1.png";
   return (
-    <div className="absolute top-14 -left-14 sm:-left-32 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[216px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)]">
+    <div className="absolute top-14 -left-14 sm:-left-42 z-40 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[216px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)]">
       {/* Container masked strictly to the 3D coil silhouette */}
       <div
         className="relative w-full h-full isolate"
@@ -139,7 +158,7 @@ export default function GrowthSection() {
           ======================================================== */}
           <div className="lg:col-span-6 relative flex items-center justify-center min-h-[460px] sm:min-h-[520px] lg:min-h-[560px]">
             {/* Layer 1: Back-Left Floating Course Card */}
-            <div className="absolute left-0 sm:left-4 top-2 sm:top-6 w-[230px] sm:w-[260px] bg-white rounded-[24px] p-3.5 border border-gray-100 shadow-[0_12px_40px_rgba(0,0,0,0.06)] z-10 transition-transform duration-300 hover:-translate-y-1">
+            <div className="absolute left-0 sm:left-4 top-2 sm:top-6 w-[230px] sm:w-[350px] bg-white rounded-[24px] p-3.5 border border-gray-100 shadow-[0_12px_40px_rgba(0,0,0,0.06)] z-10 transition-transform duration-300 hover:-translate-y-1">
               <div className="relative aspect-[16/11] rounded-[16px] overflow-hidden bg-gray-100 mb-3">
                 <img
                   src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=400&q=80"
@@ -155,16 +174,35 @@ export default function GrowthSection() {
                   </span>
                 </div>
               </div>
-              <h4 className="font-heading font-bold text-gray-900 text-[14px] truncate">
+              <h4 className="text-gray-950 heading-xs line-clamp-1">
                 Learn Figma from Basic
               </h4>
-              <p className="text-[11px] text-[#2563EB] mb-2.5">by purepearl studio</p>
+              <p className="body-xs text-[#2563EB] mb-2.5">by purepearl studio</p>
               <div className="flex items-center justify-between">
-                <span className="text-[11px] bg-gray-100 px-2.5 py-0.5 rounded-full text-gray-700">
-                  Beginner
+                <span className="text-[11px] bg-gray-100 px-2.5 py-0.5 rounded-full text-gray-700 flex items-center gap-2">
+                  <LevelBars />
+                  <span>
+                    Beginner
+                  </span>
                 </span>
                 <span className="font-bold text-[#2563EB] text-[13px]">$25<span className="text-[10px] text-gray-400 font-normal">/lifetime</span></span>
               </div>
+
+
+
+
+
+              {/* Price Row */}
+              <div className="mt-4 pt-3 flex items-baseline gap-1">
+                <span className="heading-xs text-[#003BE2]">
+                  $25
+                </span>
+                <span className="body-xs text-gray-400">
+                  /month
+                </span>
+              </div>
+
+
             </div>
 
             {/* Layer 2: 3D Lime Spring (Behind Student's Shoulder) */}
@@ -183,7 +221,7 @@ export default function GrowthSection() {
             </div>
 
             {/* Layer 4: Floating "Learning Progress 55%" Card */}
-            <div className="absolute right-0 sm:right-2 bottom-6 sm:bottom-12 z-30 bg-white rounded-[22px] p-5 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100/90 w-[190px] sm:w-[215px]">
+            <div className="absolute right-0 sm:right-13 bottom-6 sm:bottom-55 z-30 bg-white rounded-[22px] p-5 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100/90 w-[190px] sm:w-[215px]">
               <p className="text-gray-600 text-[13px] font-medium mb-1">Learning Progress</p>
               <p className="font-heading font-bold text-gray-950 text-[32px] sm:text-[36px] leading-tight mb-2.5">
                 55%

@@ -6,7 +6,7 @@ import Image from "next/image";
 function LimeSpring() {
   const coilSrc = "/images/hero-section/mask-1.png";
   return (
-    <div className="absolute top-40 -left-14 sm:-left-49 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[216px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)]">
+    <div className="absolute top-5 -left-14 sm:-left-75 z-40 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[216px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)]">
       {/* Container masked strictly to the 3D coil silhouette */}
       <div
         className="relative w-full h-full isolate"
@@ -112,7 +112,7 @@ export default function CreatorsSection() {
           ======================================================== */}
           <div className="lg:col-span-6 relative flex items-center justify-center min-h-[480px] sm:min-h-[540px] lg:min-h-[580px] order-2 lg:order-1">
             {/* Floating Card 1: Total Revenue (Top-Left) */}
-            <div className="absolute left-0 sm:left-2 top-2 sm:top-6 z-30 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[180px] sm:w-[205px] border border-blue-400/20">
+            <div className="absolute left-0 sm:left-2 top-15 sm:top-10 z-10 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[180px] sm:w-[305px] border border-blue-400/20">
               <p className="text-white text-[13px] font-medium leading-none">Total Revenue</p>
               <p className="text-white/70 text-[11px] mt-1 mb-2">July 1-28</p>
               <p className="font-heading font-bold text-white text-[24px] sm:text-[26px] leading-tight mb-3">
@@ -124,7 +124,7 @@ export default function CreatorsSection() {
             </div>
 
             {/* Floating Card 2: Year to Date (Middle-Left) */}
-            <div className="absolute left-0 sm:left-2 top-[170px] sm:top-[190px] z-30 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[190px] border border-blue-400/20">
+            <div className="absolute left-0 sm:left-2 top-[170px] sm:top-[200px] z-20 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[190px] border border-blue-400/20">
               <p className="text-white text-[13px] font-medium leading-none">Year to Date</p>
               <p className="text-white/70 text-[11px] mt-1 mb-1.5">2023</p>
               <p className="font-heading font-bold text-white text-[22px] sm:text-[25px] leading-tight mb-2.5">
@@ -141,7 +141,7 @@ export default function CreatorsSection() {
             </div>
 
             {/* Central Female Creator with Headset & Tablet */}
-            <div className="relative z-20 w-[290px] sm:w-[350px] lg:w-[520px]">
+            <div className="relative z-20 w-[290px] sm:w-[350px] lg:w-[600px]">
               <img
                 src="/images/hero-section/woman-two.png"
                 alt="Creator with tablet"
@@ -180,13 +180,13 @@ export default function CreatorsSection() {
               Right Column: Heading, Subtitle & Checklist
           ======================================================== */}
           <div className="lg:col-span-6 flex flex-col justify-center order-1 lg:order-2">
-            <h2 className="font-heading font-bold text-gray-950 text-[36px] sm:text-[46px] lg:text-[54px] leading-[1.12] tracking-tight">
+            <h2 className="heading-m text-[#242528]">
               Create & Manage
               <br />
               Courses Easily.
             </h2>
 
-            <p className="text-gray-600 text-[15px] sm:text-[16px] leading-[1.7] max-w-[500px] mt-6 mb-8">
+            <p className="text-[#4B4C53] body-l max-w-[500px] mt-6 mb-8">
               <span className="font-bold text-gray-950">ByteSpace</span> supports individuals or
               entities in the creation, publication, and administration of educational courses.
             </p>
@@ -195,10 +195,10 @@ export default function CreatorsSection() {
             <div className="space-y-4">
               {checkList.map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#1A56DB] flex items-center justify-center text-white shrink-0 shadow-sm">
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#1A56DB] flex items-center justify-center text-white shrink-0 shadow-sm">
                     <svg
-                      width="12"
-                      height="12"
+                      width="20"
+                      height="20"
                       viewBox="0 0 12 12"
                       fill="none"
                       stroke="currentColor"
@@ -210,7 +210,7 @@ export default function CreatorsSection() {
                       <polyline points="2.5 6 4.8 8.5 9.5 3.5" />
                     </svg>
                   </div>
-                  <span className="font-medium text-gray-900 text-[15px] sm:text-[16px]">
+                  <span className="label-l text-[#242528]">
                     {item}
                   </span>
                 </div>
