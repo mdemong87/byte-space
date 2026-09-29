@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <Image className="w-[171px] h-[37px]" src="/Header_Logo.png" alt="Logo" width={1000} height={1000} priority />
+            <Image className="w-[171px] h-[37px]" src="/header_logo.png" alt="Logo" width={1000} height={1000} priority />
 
           </Link>
 
