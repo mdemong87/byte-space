@@ -1,14 +1,14 @@
 "use client";
 
-import { HiSearch } from "react-icons/hi";
-import { FaStar } from "react-icons/fa";
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
+import { HiSearch } from "react-icons/hi";
 
 /* 1. Far-Left Lime Coiled Tube */
 function LimeSpringLeft() {
   const coilSrc = "/images/hero-section/mask-1.png";
   return (
-    <div className="hidden md:block absolute top-24 -left-14 sm:-left-24 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float">
+    <div className="hidden md:block absolute top-125 lg:top-24 -left-14 md:-left-40 lg:-left-24 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[385px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float">
       {/* Container masked strictly to the 3D coil silhouette */}
       <div
         className="relative w-full h-full isolate"
@@ -107,7 +107,7 @@ function WhiteTorusLeft() {
     <div
       width="220"
       height="220"
-      className="hidden lg:block absolute bottom-6 -left-12 sm:bottom-12 sm:-left-4 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[343px] sm:h-[343px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden xl:block absolute bottom-6 -left-12 sm:bottom-12 sm:-left-4 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[343px] sm:h-[343px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
       style={{ animationDelay: "1s" }}
       aria-hidden="true"
     >
@@ -158,7 +158,7 @@ function LimeCylinderRight() {
   const coilSrc = "/images/hero-section/mask-2.png";
   return (
     <div
-      className=" hidden md:block absolute top-28 -right-10 sm:-right-32 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[371px] sm:h-[371px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden md:block absolute top-115 lg:top-28 -right-10 md:-right-50 lg:-right-32 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[371px] sm:h-[371px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
     >
       {/* Container masked strictly to the 3D coil silhouette */}
       <div
@@ -206,7 +206,7 @@ function WhitePyramidRight() {
   const coilSrc = "/images/hero-section/mask-4.png";
   return (
     <div
-      className=" hidden lg:blockabsolute top-[40%] right-[8%] sm:right-[14%] lg:right-[20%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
+      className=" hidden lg:block absolute top-[40%] right-[8%] sm:right-[14%] lg:right-[20%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
       style={{ animationDelay: "2s" }}
       aria-hidden="true"
     >
@@ -256,7 +256,7 @@ function WhiteSpringBottomRight() {
   const coilSrc = "/images/hero-section/mask-6.png";
   return (
     <div
-      className="hidden lg:block absolute bottom-6 -right-6 sm:right-2 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[331px] sm:h-[331px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden xl:block absolute bottom-6 -right-6 sm:right-2 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[331px] sm:h-[331px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
       style={{ animationDelay: "1.5s" }}
     >
       {/* Container masked strictly to the 3D coil silhouette */}
@@ -367,16 +367,17 @@ export default function HeroSection() {
 
         {/* Central Person + Lime Backdrop Arc + Floating Cards */}
         <div className="relative w-full max-w-[1000px] flex justify-center items-end mt-4 sm:mt-6 overflow-visible">
+
           {/* Giant Lime Arc/Circle behind student */}
           <div
-            className="absolute bottom-0 left-2/3 -translate-x-1/6 w-[340px] sm:w-[520px] md:w-[620px] lg:w-[1149px] h-[540px] sm:h-[680px] md:h-[860px] lg:h-[1149px] bg-[#D2F627] rounded-full z-0 shadow-2xl"
+            className="absolute bottom-0 left-2/3 -translate-x-1/6 w-full sm:w-full md:w-[800px] lg:w-[1149px] h-[500px] sm:h-[600px] md:h-[860px] lg:h-[1149px] bg-[#D2F627] rounded-full z-0 shadow-2xl"
             style={{
               transform: "translate(-50%, 65%)",
             }}
           />
 
           {/* Central Smiling Student */}
-          <div className="relative z-10 w-[280px] sm:w-[430px] md:w-[450px] lg:w-[490px] flex justify-center">
+          <div className="relative z-10 w-[380px] sm:w-[430px] md:w-[550px] lg:w-[490px] flex justify-center">
             <img
               src="/images/hero-section/hero-woman.png/"
               alt="Student with laptop"
@@ -396,7 +397,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 2: Learning Progress 55% (Right of student's shoulder) */}
-          <div className="absolute right-[0%] sm:right-[4%] lg:right-[12%] top-[24%] sm:top-[28%] z-20 bg-white rounded-[22px] p-4 sm:p-5 shadow-2xl border border-gray-100/80 w-[170px] sm:w-[200px] lg:w-[220px] transition-transform duration-300 hover:-translate-y-1">
+          <div className="absolute right-[0%] sm:right-[4%] lg:right-[12%] top-[24%] md:top-[33%] lg:top-[28%] z-0 md:z-20 bg-white rounded-[22px] p-4 sm:p-5 shadow-2xl border border-gray-100/80 w-[170px] sm:w-[200px] lg:w-[220px] transition-transform duration-300 hover:-translate-y-1">
             <p className="text-gray-500 label-s mb-1">Learning Progress</p>
             <p className="font-heading font-bold text-gray-950 text-[28px] sm:text-[38px] leading-tight mb-2.5">
               55%
