@@ -54,7 +54,7 @@ function WhiteZigzag() {
   const coilSrc = "/images/hero-section/mask-5.png";
   return (
     <div
-      className="hidden lg:block absolute top-[65%] left-0 sm:left-48 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[280px] sm:h-[280px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden xl:block absolute top-[65%] left-0 sm:left-48 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[280px] sm:h-[280px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
       aria-hidden="true"
     >
 
@@ -107,7 +107,7 @@ function WhiteCone() {
     <div
       width="220"
       height="220"
-      className="hidden lg:block absolute top-9 left-60 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[143px] sm:h-[143px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
+      className="hidden xl:block absolute top-9 left-60 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[143px] sm:h-[143px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
       style={{ animationDelay: "1s" }}
       aria-hidden="true"
     >
@@ -158,7 +158,7 @@ function LimeTorus() {
   const coilSrc = "/images/hero-section/mask-2.png";
   return (
     <div
-      className="hidden lg:block absolute top-5 -right-10 sm:-right-35 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[300px] sm:h-[300px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden lg:block absolute top-60 xl:top-5 -right-10 sm:-right-35 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[300px] sm:h-[300px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
     >
       {/* Container masked strictly to the 3D coil silhouette */}
       <div
@@ -208,7 +208,7 @@ function LimePyramidtwo() {
   const coilSrc = "/images/hero-section/mask-4.png";
   return (
     <div
-      className="hidden lg:block absolute -top-[12%] right-[8%] sm:right-[10%] lg:right-[16%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
+      className="hidden xl:block absolute -top-[12%] right-[8%] sm:right-[10%] lg:right-[16%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
       style={{ animationDelay: "2s" }}
       aria-hidden="true"
     >
@@ -260,7 +260,7 @@ function LimePyramid() {
   const coilSrc = "/images/hero-section/mask-4.png";
   return (
     <div
-      className="hidden lg:block absolute top-[23%] left-[8%] sm:left-[14%] lg:left-[0%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
+      className="hidden xl:block absolute top-[23%] left-[8%] sm:left-[14%] lg:left-[0%] z-0 pointer-events-none select-none w-[340px] h-[188px] sm:w-[188px] sm:h-[385px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-blob"
       style={{ animationDelay: "2s" }}
       aria-hidden="true"
     >
@@ -310,7 +310,7 @@ function WhiteCylinder() {
   const coilSrc = "/images/hero-section/mask-6.png";
   return (
     <div
-      className="hidden lg:block absolute -bottom-30 -right-6 sm:right-2 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[331px] sm:h-[331px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
+      className="hidden xl:block absolute -bottom-30 -right-6 sm:right-2 z-0 pointer-events-none select-none w-[340px] h-[340px] sm:w-[331px] sm:h-[331px] drop-shadow-[0_20px_35px_rgba(0,0,0,0.15)] animate-float"
       style={{ animationDelay: "1.5s" }}
     >
       {/* Container masked strictly to the 3D coil silhouette */}
