@@ -315,7 +315,7 @@ export default function CoursesSection() {
   };
 
   return (
-    <section id="courses" className="py-20 lg:py-24 bg-white">
+    <section id="courses" className="py-20 lg:py-24 bg-white scroll-mt-[40px]">
       <div className="container px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-[760px] mx-auto mb-10">
