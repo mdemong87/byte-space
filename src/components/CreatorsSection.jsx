@@ -65,7 +65,7 @@ const happyStudentAvatars = [
 
 export default function CreatorsSection() {
   return (
-    <section id="creators" className="relative overflow-hidden bg-white pb-10 lg:pb-16">
+    <section id="creators" className="relative overflow-hidden bg-white pb-10 lg:pb-16 scroll-mt-[100px]">
       {/* ========================================================
           Mesh Gradient Background (Matches Image 2 precisely)
           - Top-left cool lavender / soft blue glow
