@@ -112,25 +112,25 @@ export default function CreatorsSection() {
           ======================================================== */}
           <div className="lg:col-span-6 relative flex items-center justify-center min-h-[480px] sm:min-h-[540px] lg:min-h-[580px] order-2 lg:order-1">
             {/* Floating Card 1: Total Revenue (Top-Left) */}
-            <div className="absolute left-0 sm:left-2 top-15 sm:top-10 z-10 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[180px] sm:w-[305px] border border-blue-400/20">
-              <p className="text-white text-[13px] font-medium leading-none">Total Revenue</p>
-              <p className="text-white/70 text-[11px] mt-1 mb-2">July 1-28</p>
-              <p className="font-heading font-bold text-white text-[24px] sm:text-[26px] leading-tight mb-3">
+            <div className="absolute left-0 sm:left-2 top-15 sm:top-10 z-10 bg-[#003be2] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[180px] sm:w-[305px] border border-blue-400/20">
+              <p className="text-[#F5F5F6] text-[16px] font-medium leading-none">Total Revenue</p>
+              <p className="text-[#F5F5F6] text-[10px] mt-1 mb-2">July 1-28</p>
+              <p className="text-[#FFFFFF] heading-s mb-3">
                 $120.29
               </p>
-              <div className="w-full h-1.5 bg-blue-900/40 rounded-full overflow-hidden">
+              <div className="w-full h-[8px] bg-white rounded-full overflow-hidden">
                 <div className="h-full bg-[#D1F526] rounded-full w-[65%]" />
               </div>
             </div>
 
             {/* Floating Card 2: Year to Date (Middle-Left) */}
-            <div className="absolute left-0 sm:left-2 top-[200px] sm:top-[200px] z-20 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[190px] border border-blue-400/20">
-              <p className="text-white text-[13px] font-medium leading-none">Year to Date</p>
-              <p className="text-white/70 text-[11px] mt-1 mb-1.5">2023</p>
-              <p className="font-heading font-bold text-white text-[22px] sm:text-[25px] leading-tight mb-2.5">
+            <div className="absolute left-0 sm:left-2 top-[200px] sm:top-[200px] z-20 bg-[#003be2] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[200px] border border-blue-400/20">
+              <p className="text-[#F5F5F6] text-[16px] font-medium leading-none">Year to Date</p>
+              <p className="text-[#F5F5F6] text-[10px] mt-1 mb-1.5">2023</p>
+              <p className="heading-s text-[#FFFFFF] mb-2.5">
                 $1,200.38
               </p>
-              <span className="inline-block bg-[#D1F526] text-gray-950 font-bold text-[11px] px-2.5 py-0.5 rounded-full shadow-sm">
+              <span className="inline-block bg-[#D1F526] text-gray-950 font-[400] text-[11px] px-2 py-1 rounded-full shadow-sm">
                 +12%
               </span>
             </div>
@@ -152,13 +152,13 @@ export default function CreatorsSection() {
 
             {/* Floating Card 3: Happy Students (Bottom-Right) */}
             <div className="absolute right-0 sm:right-4 bottom-4 sm:bottom-8 z-30 bg-white rounded-[22px] p-4 sm:p-4.5 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100/90 w-[210px] sm:w-[235px]">
-              <p className="font-heading font-bold text-gray-950 text-[14px]">
+              <p className="font-heading font-bold text-[#242528] text-[16px]">
                 Happy Students
               </p>
               <div className="flex items-center gap-1 text-[12px] text-gray-600 mt-0.5 mb-2.5">
                 <span className="font-semibold text-gray-900">4.5</span>
                 <span>(240)</span>
-                <FaStar className="w-3 h-3 text-yellow-400" />
+                <FaStar className="w-3 h-3 text-[#cbfc01]" />
               </div>
               <div className="flex items-center -space-x-1.5">
                 {happyStudentAvatars.map((avatar, idx) => (
