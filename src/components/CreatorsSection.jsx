@@ -1,7 +1,7 @@
 "use client";
 
-import { FaStar } from "react-icons/fa";
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 
 function LimeSpring() {
   const coilSrc = "/images/hero-section/mask-1.png";
@@ -124,7 +124,7 @@ export default function CreatorsSection() {
             </div>
 
             {/* Floating Card 2: Year to Date (Middle-Left) */}
-            <div className="absolute left-0 sm:left-2 top-[170px] sm:top-[200px] z-20 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[190px] border border-blue-400/20">
+            <div className="absolute left-0 sm:left-2 top-[200px] sm:top-[200px] z-20 bg-[#1A56DB] text-white rounded-[20px] p-4 sm:p-5 shadow-2xl w-[170px] sm:w-[190px] border border-blue-400/20">
               <p className="text-white text-[13px] font-medium leading-none">Year to Date</p>
               <p className="text-white/70 text-[11px] mt-1 mb-1.5">2023</p>
               <p className="font-heading font-bold text-white text-[22px] sm:text-[25px] leading-tight mb-2.5">
@@ -141,7 +141,7 @@ export default function CreatorsSection() {
             </div>
 
             {/* Central Female Creator with Headset & Tablet */}
-            <div className="relative z-20 w-[290px] sm:w-[350px] lg:w-[600px]">
+            <div className="relative z-20 w-[360px] sm:w-[370px] lg:w-[600px]">
               <img
                 src="/images/hero-section/woman-two.png"
                 alt="Creator with tablet"
