@@ -312,7 +312,7 @@ const happyAvatars = [
 export default function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden bg-[#0A4BF5] pt-[100px] sm:pt-[125px] lg:pt-[135px] pb-0"
+      className="relative overflow-hidden bg-[#003be2] pt-[100px] sm:pt-[125px] lg:pt-[135px] pb-0"
       style={{
         backgroundImage: `
           linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),

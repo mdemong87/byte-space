@@ -358,7 +358,7 @@ function WhiteCylinder() {
 export default function CTASection() {
   return (
     <section
-      className="relative overflow-hidden bg-[#0A4BF5] py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#003be2] py-12 sm:py-16 lg:py-20"
       style={{
         backgroundImage: `
           linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),

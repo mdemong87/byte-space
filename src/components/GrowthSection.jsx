@@ -153,7 +153,7 @@ export default function GrowthSection() {
           ======================================================== */}
           <div className="lg:col-span-6 relative flex items-center justify-center min-h-[420px] xs:min-h-[470px] sm:min-h-[530px] lg:min-h-[580px] w-full max-w-[500px] lg:max-w-none mx-auto">
             {/* Layer 1: Back-Left Floating Course Card */}
-            <div className="absolute -left-2 xs:left-0 sm:left-2 lg:left-0 top-0 sm:top-2 lg:top-4 w-[170px] xs:w-[200px] sm:w-[270px] lg:w-[310px] bg-white rounded-[18px] sm:rounded-[24px] p-2.5 xs:p-3 sm:p-4 border border-gray-100 shadow-[0_12px_40px_rgba(0,0,0,0.06)] z-10 transition-transform duration-300 hover:-translate-y-1">
+            <div className="absolute -left-2 xs:left-0 sm:left-2 lg:left-0 top-0 sm:top-2 lg:top-4 w-[170px] xs:w-[200px] sm:w-[270px] lg:w-[310px] bg-white rounded-[18px] sm:rounded-[24px] p-2.5 xs:p-3 sm:p-4 border border-[#CED0D3] shadow-[0_12px_40px_rgba(0,0,0,0.06)] z-10 transition-transform duration-300 hover:-translate-y-1">
               <div className="relative aspect-[16/10] rounded-[12px] sm:rounded-[16px] overflow-hidden bg-gray-100 mb-2 sm:mb-3">
                 <img
                   src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=400&q=80"
@@ -177,20 +177,22 @@ export default function GrowthSection() {
                 by purepearl studio
               </p>
 
-              <div className="flex items-center justify-between pt-1 border-t border-gray-100/80">
-                <span className="text-[9px] xs:text-[10px] sm:text-[11px] bg-gray-100 px-2 py-0.5 rounded-full text-gray-700 flex items-center gap-1.5">
+              <div className="flex items-center justify-between pt-1">
+                <span className="text-[9px] xs:text-[10px] sm:text-[11px] bg-gray-100 px-2 py-1 rounded-full text-gray-700 flex items-center gap-1.5">
                   <LevelBars />
                   <span>Beginner</span>
                 </span>
-                <div className="flex items-baseline gap-0.5">
-                  <span className="font-heading font-bold text-[#003BE2] text-[12px] xs:text-[13px] sm:text-[16px]">
-                    $25
-                  </span>
-                  <span className="text-[9px] xs:text-[10px] sm:text-[11px] text-gray-400">
-                    /month
-                  </span>
-                </div>
               </div>
+
+              <div className="flex items-baseline gap-0.5 mt-3">
+                <span className="font-heading font-bold text-[#003BE2] text-[12px] xs:text-[13px] sm:text-[16px]">
+                  $25
+                </span>
+                <span className="text-[9px] xs:text-[10px] sm:text-[11px] text-gray-400">
+                  /lefttime
+                </span>
+              </div>
+
             </div>
 
             {/* Layer 2: 3D Lime Spring (Behind Student's Right Shoulder) */}
@@ -210,13 +212,13 @@ export default function GrowthSection() {
 
             {/* Layer 4: Floating "Learning Progress 55%" Card */}
             <div className="absolute right-0 sm:right-2 lg:right-6 bottom-1 xs:bottom-2 sm:bottom-8 lg:bottom-12 z-30 bg-white rounded-[16px] xs:rounded-[18px] sm:rounded-[22px] p-3 xs:p-3.5 sm:p-5 shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-gray-100/90 w-[138px] xs:w-[158px] sm:w-[195px] lg:w-[215px]">
-              <p className="text-gray-500 text-[10px] xs:text-[11px] sm:text-[13px] font-medium mb-0.5 sm:mb-1">
+              <p className="text-[#242528] text-[11px] xs:text-[12px] sm:text-[14px] font-medium mb-0.5 sm:mb-1">
                 Learning Progress
               </p>
-              <p className="font-heading font-bold text-gray-950 text-[22px] xs:text-[26px] sm:text-[34px] lg:text-[36px] leading-tight mb-1.5 sm:mb-2.5">
+              <p className="font-heading font-semibold text-gray-950 text-[48px] xs:text-[26px] sm:text-[34px] lg:text-[36px] leading-tight mb-1.5 sm:mb-2.5">
                 55%
               </p>
-              <div className="w-full h-1.5 sm:h-2 bg-gray-100 rounded-full overflow-hidden">
+              <div className="w-full h-[8px] sm:h-2 bg-gray-100 rounded-full overflow-hidden">
                 <div className="h-full bg-[#D1F526] rounded-full w-[55%]" />
               </div>
             </div>
